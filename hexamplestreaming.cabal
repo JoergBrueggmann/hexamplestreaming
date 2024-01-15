@@ -1,18 +1,18 @@
-cabal-version: 2.2
+cabal-version: 1.12
 
 -- This file has been generated from package.yaml by hpack version 0.36.0.
 --
 -- see: https://github.com/sol/hpack
 
 name:           hexamplestreaming
-version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/hexamplestreaming#readme>
-homepage:       https://github.com/githubuser/hexamplestreaming#readme
-bug-reports:    https://github.com/githubuser/hexamplestreaming/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2024 Author name here
-license:        BSD-3-Clause
+version:        1.0.0
+description:    Please see the README on GitHub at <https://github.com/JoergBrueggmann/hexamplestreaming#readme>
+homepage:       https://github.com/JoergBrueggmann/hexamplestreaming#readme
+bug-reports:    https://github.com/JoergBrueggmann/hexamplestreaming/issues
+author:         Jörg Karl-Heinz Walter Brüggmann
+maintainer:     info@joerg-brueggmann.de
+copyright:      Jörg Karl-Heinz Walter Brüggmann
+license:        CC0-1.0-Deed
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -21,34 +21,35 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/hexamplestreaming
+  location: https://github.com/JoergBrueggmann/hexamplestreaming
 
 library
   exposed-modules:
+      BuildInfo
       Lib
   other-modules:
-      Paths_hexamplestreaming
-  autogen-modules:
       Paths_hexamplestreaming
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , echo
+    , streaming
   default-language: Haskell2010
 
-executable hexamplestreaming-exe
+executable hexamplestreaming
   main-is: Main.hs
   other-modules:
-      Paths_hexamplestreaming
-  autogen-modules:
       Paths_hexamplestreaming
   hs-source-dirs:
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , echo
     , hexamplestreaming
+    , streaming
   default-language: Haskell2010
 
 test-suite hexamplestreaming-test
@@ -56,12 +57,12 @@ test-suite hexamplestreaming-test
   main-is: Spec.hs
   other-modules:
       Paths_hexamplestreaming
-  autogen-modules:
-      Paths_hexamplestreaming
   hs-source-dirs:
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , echo
     , hexamplestreaming
+    , streaming
   default-language: Haskell2010

@@ -1,10 +1,10 @@
 name:                hexamplestreaming
-version:             0.1.0.0
-github:              "githubuser/hexamplestreaming"
-license:             BSD-3-Clause
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2024 Author name here"
+version:             1.0.0
+github:              "JoergBrueggmann/hexamplestreaming"
+license:             "CC0-1.0-Deed"
+author:              "Jörg Karl-Heinz Walter Brüggmann"
+maintainer:          "info@joerg-brueggmann.de"
+copyright:           "Jörg Karl-Heinz Walter Brüggmann"
 
 extra-source-files:
 - README.md
@@ -17,10 +17,12 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/hexamplestreaming#readme>
+description:         Please see the README on GitHub at <https://github.com/JoergBrueggmann/hexamplestreaming#readme>
 
 dependencies:
 - base >= 4.7 && < 5
+- streaming
+- echo
 
 ghc-options:
 - -Wall
@@ -37,7 +39,7 @@ library:
   source-dirs: src
 
 executables:
-  hexamplestreaming-exe:
+  hexamplestreaming:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
