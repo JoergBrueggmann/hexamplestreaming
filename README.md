@@ -33,3 +33,7 @@ then, when entered:
 the complete output is
 
     ["7/=12", "34==34", "57/=56"]
+
+## Source file here
+
+https://github.com/JoergBrueggmann/hexamplestreaming/blob/main/src/Lib.hs
