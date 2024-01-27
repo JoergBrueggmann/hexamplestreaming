@@ -27,6 +27,7 @@ library
   exposed-modules:
       BuildInfo
       Lib
+      Lib2
   other-modules:
       Paths_hexamplestreaming
   hs-source-dirs:

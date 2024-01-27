@@ -1,5 +1,6 @@
 
-import qualified Lib
+--import qualified Lib
+import qualified Lib2
 
 main :: IO ()
-main = Lib.main
+main = Lib2.main
